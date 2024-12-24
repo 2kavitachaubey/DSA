@@ -7,7 +7,7 @@ public class Array2Java {
         int2DArray = new int[2][2];
 
         //Initialize
-        int2DArray[0][0] = 4;
+        int2DArray[0][0] = 5;
         int2DArray[0][1] = 3;
         int2DArray[1][0] = 2;
         int2DArray[1][1] = 1;

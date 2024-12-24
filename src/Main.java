@@ -16,7 +16,7 @@ public class Main {
         System.out.println(thirdValue);
 
         a2.traversalArray();
-        a2.searchElement(7);
+        a2.searchElement(4);
         a2.deleteElement(2);
         System.out.println(a2.array[2]);
     }

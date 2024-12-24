@@ -46,7 +46,7 @@ public class Array1_1Java {
             array[valueToDeleteIndex] = Integer.MIN_VALUE;
             System.out.println("The value has been deleted successfully...");
         } catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("The value that is provided is not in the range of array...");
+            System.out.println("The value that is provided is not in the range of array.");
         }
     }
 }
