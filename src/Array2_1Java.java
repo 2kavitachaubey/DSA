@@ -18,7 +18,7 @@ public class Array2_1Java {
                 System.out.println("The index is already occupied.");
             }
         }catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("The index is invalid...");
+            System.out.println("The index is invalid.");
         }
     }
 }

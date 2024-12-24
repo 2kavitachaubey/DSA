@@ -1,4 +1,3 @@
-import java.util.*;
 public class Array1_1Java {
     int array[] = null;
     public Array1_1Java(int size){
