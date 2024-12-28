@@ -10,7 +10,7 @@ public class Array1Java {
         arr[4]=5;   //O(1) --
         System.out.println(Arrays.toString(arr));
 
-        String sarr[]= {"a","b","c"};   //O(1)
+        String sarr[]= {"a","b","d"};   //O(1)
         System.out.println(Arrays.toString(sarr));
 
     }
