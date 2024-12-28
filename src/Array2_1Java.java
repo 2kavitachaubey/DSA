@@ -21,4 +21,43 @@ public class Array2_1Java {
             System.out.println("The index is invalid...");
         }
     }
+
+    public void access(int row, int column){
+        System.out.println("Accessing row:" + row + " col:" + column);
+        try{
+            System.out.println("Cell value is: " + arr[row][column]);
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Invalid index for 2 dimensional array.");
+        }
+    }
+
+    public void traverse(){
+        for(int row = 0; row<arr.length; row++){
+            for(int col = 0; col<arr[0].length; col++){
+                System.out.print(arr[row][col] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void search(int value){
+        for(int row = 0; row<arr.length; row++){
+            for(int col = 0; col<arr[0].length; col++){
+                if(arr[row][col] == value){
+                    System.out.println("The value " + value + " is found at row: " + row + " column: " + col);
+                    return;
+                }
+            }
+        }
+        System.out.println("Value is not found.");
+    }
+
+    public void deleteValue(int row, int col){
+        try{
+            System.out.println("Successfully deleted: " + arr[row][col]);
+            arr[row][col] = Integer.MIN_VALUE;
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("The index is not valued for array.");
+        }
+    }
 }
