@@ -18,6 +18,6 @@ public class Main {
         a2.traversalArray();
         a2.searchElement(4);
         a2.deleteElement(2);
-        System.out.println(a2.array[2]);
+        System.out.println(a2.array[3]);
     }
 }
