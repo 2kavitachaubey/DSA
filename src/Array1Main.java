@@ -1,5 +1,4 @@
-import java.util.Arrays;
-public class Main {
+public class Array1Main {
     public static void main(String[] args) {
         Array1_1Java a2 = new Array1_1Java(5);
         a2.insert(1, 2);
