@@ -25,6 +25,6 @@ public class ArrayProject {
 
         System.out.println();
         System.out.println("Average Temp: " + average);
-        System.out.print(above + " day's above average");
+        System.out.print(above + " day's above Average.");
     }
 }
