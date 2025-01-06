@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class Question {
     public static void main(String [] args ){
@@ -19,13 +19,35 @@ public class Question {
 
         //QUESTION 2
         int arr[] = {1,4,2,7,8,2};
-        int highest = Integer.MIN_VALUE;
-        int smallest = Integer.MAX_VALUE;
-        for(int value: arr){
-            if(value>highest){
-                highest=value;
+//        int highest = Integer.MIN_VALUE;
+//        int smallest = Integer.MAX_VALUE;
+//        for(int value: arr){
+//            if(value>highest){
+//                highest=value;
+//            }
+//            if(value<smallest){
+//                smallest = value;
+//            }
+//        }
+//        System.out.println(highest);
+//        System.out.println(smallest);
+
+        //QUESTION 3
+
+        int count =0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number you want to count: ");
+        int num = sc.nextInt();
+        for( int value: arr){
+            if(value == num){
+                count++;
             }
         }
-        System.out.println(highest);
+        if(count > 0){
+            System.out.println("It occurs in " + count + " times.");
+        }else{
+            System.out.println("It doesn't occur in array.");
+        }
+
     }
 }
