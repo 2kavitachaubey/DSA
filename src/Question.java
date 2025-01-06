@@ -20,6 +20,7 @@ public class Question {
         //QUESTION 2
         int arr[] = {1,4,2,7,8,2};
         int highest = Integer.MIN_VALUE;
+        int smallest = Integer.MAX_VALUE;
         for(int value: arr){
             if(value>highest){
                 highest=value;
