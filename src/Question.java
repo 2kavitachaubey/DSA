@@ -45,7 +45,7 @@ public class Question {
         }
         if(count > 0){
             System.out.println("It occurs in " + count + " times.");
-        }else{
+        }else {
             System.out.println("It doesn't occur in array.");
         }
 
