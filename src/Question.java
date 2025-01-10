@@ -34,20 +34,57 @@ public class Question {
 
         //QUESTION 3
 
-        int count =0;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number you want to count: ");
-        int num = sc.nextInt();
-        for( int value: arr){
-            if(value == num){
-                count++;
+//        int count =0;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the number you want to count: ");
+//        int num = sc.nextInt();
+//        for( int value: arr){
+//            if(value == num){
+//                count++;
+//            }
+//        }
+//        if(count > 0){
+//            System.out.println("It occurs in " + count + " times.");
+//        }else {
+//            System.out.println("It doesn't occur in array.");
+//        }
+
+        //QUESTION 4
+//        String [] strings = {"hello","world","hell","yeah"};
+//        String prifix = "hel";
+//        int count=0;
+//
+//        for(int i = 0; i< strings.length; i++){
+//            boolean isprifix = true;
+//            if(strings[i].length() >= prifix.length()){
+//                for(int j = 0; j< prifix.length() ; j++){
+//                    if(strings[i].charAt(j) != prifix.charAt(j)){
+//                        isprifix = false;
+//                        break;
+//                    }
+//                }
+//            }
+//            if(isprifix){
+//                count++;
+//            }
+////            if(strings[i].startsWith(prifix)){
+////                count++;
+////            }
+//        }
+//        System.out.println(count);
+
+        // QUESTION 5
+        int target = 9;
+        int[] result = new int[2];
+        for( int i = 0 ; i< arr.length-1; i++){
+            for(int j = i+1; j< arr.length; j++){
+                if((arr[i] + arr[j]) == target){
+                    result[0] = i;
+                    result[1] = j;
+                }
             }
         }
-        if(count > 0){
-            System.out.println("It occurs in " + count + " times.");
-        }else {
-            System.out.println("It doesn't occur in array.");
-        }
+        System.out.println(Arrays.toString(result));
 
     }
 }
