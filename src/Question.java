@@ -97,9 +97,9 @@ public class Question {
             x = x / 10;
         }
         if(n == original){
-            System.out.println("It's a palindrome.");
+            System.out.println(original +" is a palindrome.");
         }else{
-            System.out.println("It's not a palindrome.");
+            System.out.println(original + " is not a palindrome.");
         }
 
     }
