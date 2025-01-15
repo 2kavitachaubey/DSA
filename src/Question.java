@@ -18,7 +18,7 @@ public class Question {
 //        System.out.println(Arrays.toString(newArr));
 
         //QUESTION 2
-        int arr[] = {1,4,2,7,8,2};
+//        int arr[] = {1,4,2,7,8,2};
 //        int highest = Integer.MIN_VALUE;
 //        int smallest = Integer.MAX_VALUE;
 //        for(int value: arr){
@@ -86,21 +86,31 @@ public class Question {
 //        }
 //        System.out.println(Arrays.toString(result));
 
-        int x;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number: ");
-        x = sc.nextInt();
-        int r, n = 0, original = x;
-        while(x>0){
-            r = x % 10;
-            n = n * 10 + r;
-            x = x / 10;
-        }
-        if(n == original){
-            System.out.println(original +" is a palindrome.");
-        }else{
-            System.out.println(original + " is not a palindrome.");
-        }
+//        int x;
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter the number: ");
+//        x = sc.nextInt();
+//        int r, n = 0, original = x;
+//        while(x>0){
+//            r = x % 10;
+//            n = n * 10 + r;
+//            x = x / 10;
+//        }
+//        if(n == original){
+//            System.out.println(original +" is a palindrome.");
+//        }else{
+//            System.out.println(original + " is not a palindrome.");
+//        }
 
+        int nums[] = {1,1,2,7,8,2};
+        int index = 1;
+        int count = 0;
+        for(int i = 0 ;i<nums.length-1;i++){
+            if(nums[i] != nums[index]){
+                count++;
+            }
+            index++;
+        }
+        System.out.println(count);
     }
 }
