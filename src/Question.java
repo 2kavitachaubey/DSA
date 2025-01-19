@@ -114,17 +114,17 @@ public class Question {
         System.out.println(count);
 
         String strings[] = "I'm the Kavita Chaubey";
-        int count = 0;
+        int sum = 0;
         for(int i = s.length()-1; i>=0; i--){
-            if(s.charAt(i) == ' ' && count ==0){
+            if(s.charAt(i) == ' ' && sum ==0){
                 continue;
-            }else if(s.charAt(i)==' ' && count>0 ){
+            }else if(s.charAt(i)==' ' && sum>0 ){
                 break;
             }
             else{
-                count++;
+                sum++;
             }
         }
-        System.out.println(count);
+        System.out.println(sum);
     }
 }
