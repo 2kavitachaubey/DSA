@@ -102,18 +102,18 @@ public class Question {
 //            System.out.println(original + " is not a palindrome.");
 //        }
 
-        int nums[] = {1,1,2,7,8,2};
-        int index = 1;
-        int count = 0;
-        for(int i = 0 ;i<nums.length-1;i++){
-            if(nums[i] != nums[index]){
-                count++;
-            }
-            index++;
-        }
-        System.out.println(count);
+//        int nums[] = {1,1,2,7,8,2};
+//        int index = 1;
+//        int count = 0;
+//        for(int i = 0 ;i<nums.length-1;i++){
+//            if(nums[i] != nums[index]){
+//                count++;
+//            }
+//            index++;
+//        }
+//        System.out.println(count);
 
-        String strings[] = "I'm the Kavita Chaubey";
+        String s= "I'm the Kavita Chaubey";
         int sum = 0;
         for(int i = s.length()-1; i>=0; i--){
             if(s.charAt(i) == ' ' && sum ==0){
