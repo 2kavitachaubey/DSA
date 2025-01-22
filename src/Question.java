@@ -1,7 +1,7 @@
-import java.util.*;
-
-public class Question {
-    public static void main(String [] args ){
+//import java.util.*;
+//
+//public class Question {
+//    public static void main(String [] args ){
 //        int arr[] = {1,1,2,2,3,4,5};
 
         // QUESTION 1
@@ -86,6 +86,7 @@ public class Question {
 //        }
 //        System.out.println(Arrays.toString(result));
 
+        //QUESTION 6
 //        int x;
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the number: ");
@@ -102,6 +103,7 @@ public class Question {
 //            System.out.println(original + " is not a palindrome.");
 //        }
 
+        // QUESTION 7
 //        int nums[] = {1,1,2,7,8,2};
 //        int index = 1;
 //        int count = 0;
@@ -113,18 +115,80 @@ public class Question {
 //        }
 //        System.out.println(count);
 
-        String s= "I'm the Kavita Chaubey";
-        int sum = 0;
-        for(int i = s.length()-1; i>=0; i--){
-            if(s.charAt(i) == ' ' && sum ==0){
-                continue;
-            }else if(s.charAt(i)==' ' && sum>0 ){
-                break;
-            }
-            else{
-                sum++;
-            }
-        }
-        System.out.println(sum);
+        //QUESTION 8
+//        String s= "I'm the Kavita Chaubey";
+//        int sum = 0;
+//        for(int i = s.length()-1; i>=0; i--){
+//            if(s.charAt(i) == ' ' && sum ==0){
+//                continue;
+//            }else if(s.charAt(i)==' ' && sum>0 ){
+//                break;
+//            }
+//            else{
+//                sum++;
+//            }
+//        }
+//        System.out.println(sum);
+
+        //QUESTION 9
+
+//    }
+//}
+
+//import java.util.Scanner;
+//public class Question {
+//    static int sumOfDigit(int n) {
+//        int sum = 0;
+//        int count = 0;
+//        while( n != 0 ){   // while because we don't know where the loop will end
+//            count++;
+//            int r = n % 10;
+//            sum += r;
+//            n /= 10;
+//        }
+//        System.out.println("The number of digits in number: " + count);
+//        return sum;
+//    }
+//    public static void main(String [] args) {
+//        int n;
+//        Scanner sc = new Scanner(System.in);  //system -- class
+//        System.out.println("Enter the value of num: ");
+//        n = sc.nextInt(); // it is a method
+//        System.out.println("The sum of digit: "+ sumOfDigit(n));
+//    }
+//}
+
+import java.util.Scanner;
+
+public class Question {
+    	static boolean prime(int n) {
+		for(int i=2; i<n;i++) {
+			if(n%i == 0) {
+			return false;
+			}
+		}
+		for(int i=2; i<n/2;i++) {
+			if(n%i == 0) {
+				return false;
+			}
+		}
+		for(int i=2; i<Math.sqrt(n);i++) {
+			if(n%i == 0) {
+				return false;
+			}
+		}
+		return true;
+
+	}
+
+    public static void main(String [] args) {
+        int n;
+        Scanner sc = new Scanner(System.in);  //system -- class
+        System.out.println("Enter the value of number: ");
+        n = sc.nextInt(); // it is a method
+		if(prime(n)) {
+			System.out.println("It's a prime number.");
+		}else System.out.println("It's not a prime number");
     }
 }
+
