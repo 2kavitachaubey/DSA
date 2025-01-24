@@ -189,6 +189,34 @@ public class Question {
 		if(prime(n)) {
 			System.out.println("It's a prime number.");
 		}else System.out.println("It's not a prime number");
+
+		int year = 1960;
+		if((year % 4 == 0 && year % 100 != 0 )|| year % 400 ==0){
+			System.out.println("It's a leap year");
+		}
+		else{
+			System.out.println("It's not a leap year");
+		}
+
+		// QUESTION 4....
+		int marks = 95;
+		if(marks >= 90 && marks <= 100){
+			System.out.println("A");
+		}
+		else if(marks >= 80 && marks <= 89){
+			System.out.println("B");
+		}
+		else if(marks >= 70 && marks <= 79){
+			System.out.println("C");
+		}else if(marks >= 60 && marks <= 69){
+			System.out.println("D");
+		}else{
+			System.out.println("F");
+		}
     }
+
+	// QUESTION 3.....
+
+
 }
 
