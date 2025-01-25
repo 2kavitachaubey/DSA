@@ -119,7 +119,7 @@ public class CollegeCode {
         }
 
         // QUESTION 4....
-        int marks = 75;
+        int marks = 85;
         if(marks >= 90 && marks <= 100){
             System.out.println("A");
         }
