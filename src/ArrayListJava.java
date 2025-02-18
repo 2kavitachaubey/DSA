@@ -54,7 +54,7 @@ public class ArrayListJava {
         System.out.println(numbers);
 
         //Sorting in Array....
-        ArrayList<Integer> myNumbers = new ArrayList<Integer>(Arrays.asList(4,2,65,24,75,24));
+        ArrayList<Integer> myNumbers = new ArrayList<Integer>(Arrays.asList(6,76,3,65,86,34,68));
         System.out.println(myNumbers);
 
         Collections.sort(myNumbers);
