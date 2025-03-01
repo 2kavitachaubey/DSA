@@ -60,5 +60,11 @@ public class ArrayListJava {
         Collections.sort(myNumbers);
         System.out.println(myNumbers);
 
+        Iterator<Integer> number = myNumbers.iterator();
+        while(number.hasNext()){
+            System.out.print(number.next());
+            System.out.print(" ");
+        }
+
     }
 }
