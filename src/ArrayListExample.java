@@ -40,7 +40,7 @@ public class ArrayListExample {
                     System.out.println("Name : " + studentName.remove(j));
                     System.out.println("Student Id : " + studentId.remove(j));
                     System.out.println(studentName);
-                    System.out.println(studentId    );
+                    System.out.println(studentId);
                     return;
                 }
             }
