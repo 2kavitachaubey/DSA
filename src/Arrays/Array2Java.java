@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.Arrays;
 public class Array2Java {
     public static void main(String[] args){

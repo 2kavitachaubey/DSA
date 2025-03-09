@@ -54,62 +54,62 @@ public class CollegeCode {
 
         // QUESTION 2....
 
-//        int num1 = 100;
-//        int num2 = 120;
-//        int num3 = 60;
-//        int num4 = 70;
-//
-//        if(num1 > num2){
-//            if(num1 > num3){
-//                if(num1 > num4){
-//                    System.out.println(num1);
-//                }
-//                else {
-//                    System.out.println(num4);
-//                }
-//            }
-//            else {
-//                if(num3 > num4){
-//                    System.out.println(num3);
-//                }
-//                else{
-//                    System.out.println(num4);
-//                }
-//            }
-//        }
-//        else {
-//            if(num2 > num3){
-//                if(num2 > num4){
-//                    System.out.println(num2);
-//                }
-//                else {
-//                    System.out.println(num4);
-//                }
-//            }
-//            else {
-//                if(num3 > num4){
-//                    System.out.println(num3);
-//                }
-//                else{
-//                    System.out.println(num4);
-//                }
-//            }
-//        }
-//
-//        int max = num1;
-//        if(num2 > max){
-//            max = num2;
-//        }
-//        if(num3 > max){
-//            max = num3;
-//        }
-//        if(num4 > max){
-//            max = num4;
-//        }
-//        System.out.println(max);
+        int num1 = 100;
+        int num2 = 120;
+        int num3 = 60;
+        int num4 = 70;
+
+        if(num1 > num2){
+            if(num1 > num3){
+                if(num1 > num4){
+                    System.out.println(num1);
+                }
+                else {
+                    System.out.println(num4);
+                }
+            }
+            else {
+                if(num3 > num4){
+                    System.out.println(num3);
+                }
+                else{
+                    System.out.println(num4);
+                }
+            }
+        }
+        else {
+            if(num2 > num3){
+                if(num2 > num4){
+                    System.out.println(num2);
+                }
+                else {
+                    System.out.println(num4);
+                }
+            }
+            else {
+                if(num3 > num4){
+                    System.out.println(num3);
+                }
+                else{
+                    System.out.println(num4);
+                }
+            }
+        }
+
+        int max = num1;
+        if(num2 > max){
+            max = num2;
+        }
+        if(num3 > max){
+            max = num3;
+        }
+        if(num4 > max){
+            max = num4;
+        }
+        System.out.println(max);
 
 
-        // QUESTION 3.....
+//         QUESTION 3.....
         int year = 1960;
         if((year % 4 == 0 && year % 100 != 0 )|| year % 400 ==0){
             System.out.println("It's a leap year");
@@ -119,20 +119,20 @@ public class CollegeCode {
         }
 
 //        // QUESTION 4....
-//        int marks = 75;
-//        if(marks >= 90 && marks <= 100){
-//            System.out.println("A");
-//        }
-//        else if(marks >= 80 && marks <= 89){
-//            System.out.println("B");
-//        }
-//        else if(marks >= 70 && marks <= 79){
-//            System.out.println("C");
-//        }else if(marks >= 60 && marks <= 69){
-//            System.out.println("D");
-//        }else{
-//            System.out.println("F");
-//        }
+        int marks = 75;
+        if(marks >= 90 && marks <= 100){
+            System.out.println("A");
+        }
+        else if(marks >= 80 && marks <= 89){
+            System.out.println("B");
+        }
+        else if(marks >= 70 && marks <= 79){
+            System.out.println("C");
+        }else if(marks >= 60 && marks <= 69){
+            System.out.println("D");
+        }else{
+            System.out.println("F");
+        }
 
 
 

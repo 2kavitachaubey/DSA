@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Array2_1Java {
     int arr[][] = null;
     public Array2_1Java(int numberOfRows, int numberOfColumns){

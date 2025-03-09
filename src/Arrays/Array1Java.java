@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.*;
 public class Array1Java {
     public static void main(String [] args){

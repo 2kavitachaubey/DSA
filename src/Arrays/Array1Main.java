@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Array1Main {
     public static void main(String[] args) {
         Array1_1Java a2 = new Array1_1Java(5);
