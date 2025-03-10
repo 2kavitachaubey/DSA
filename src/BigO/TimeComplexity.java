@@ -1,5 +1,6 @@
-import java.sql.Time;
+package BigO;
 
+// n
 public class TimeComplexity {
     void calculate(int[] array){
         int sum = 0;
