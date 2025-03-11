@@ -14,4 +14,11 @@ public class SinglyLinkedList {
         size = 1;
         return head;
     }
+    public Node insertInFront(int firstNodeValue){
+        Node first = new Node();
+        first.value = firstNodeValue;
+        first.next = head;
+        head = first;
+        return first;
+    }
 }
