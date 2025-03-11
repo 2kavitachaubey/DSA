@@ -14,11 +14,28 @@ public class SinglyLinkedList {
         size = 1;
         return head;
     }
-    public Node insertInFront(int firstNodeValue){
-        Node first = new Node();
-        first.value = firstNodeValue;
-        first.next = head;
-        head = first;
-        return first;
+    public void insertInLinkedList(int value, int location){
+        Node node = new Node();
+        node.value = value;
+        if(head == null){
+            createSinglyLinkedList(value);
+        }else if(location == 0){
+            node.next = head;
+            head = node;
+        }else if(location >= size){
+            node.next = null;
+            tail.next = node;
+            tail = node;
+        }else{
+            Node tempNode = head;
+            int index = 0;
+            while(index < location-1){
+                tempNode = tempNode.next;
+                index++;
+            }
+            tempNode.next = node;
+            node.next = tempNode.next.next;
+        }
+        size++;
     }
 }
