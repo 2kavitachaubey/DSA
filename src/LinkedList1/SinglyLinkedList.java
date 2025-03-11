@@ -33,9 +33,42 @@ public class SinglyLinkedList {
                 tempNode = tempNode.next;
                 index++;
             }
+            Node nextNode = tempNode.next;
             tempNode.next = node;
-            node.next = tempNode.next.next;
+            node.next = nextNode;
         }
         size++;
+    }
+    public void traverseLinkedList(){
+        if(head == null){
+            System.out.println("Linked list doesn't exist...");
+        }else{
+            Node tempNode = head;
+            for(int i = 0; i<size; i++){
+                System.out.print(tempNode.value);
+                if(i != size-1){
+                    System.out.print(" -> ");
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("\n");
+    }
+
+    public boolean searchNode(int value){
+        if(head == null){
+            System.out.println("It's empty");
+        }else{
+            Node tempNode = head;
+            for(int i = 0 ; i<size; i++){
+                if(value == tempNode.value){
+                    System.out.println("Found the node at location "+ i);
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("Can't find the node!");
+        return false;
     }
 }
