@@ -4,6 +4,7 @@ public class SinglyLinkedList {
     public Node head;         // Store the node/object
     public Node tail;
     public int size;
+
     public Node createSinglyLinkedList(int nodeValue){
         head = new Node();
         Node node = new Node();  // Created a node
@@ -14,6 +15,7 @@ public class SinglyLinkedList {
         size = 1;
         return head;
     }
+
     public void insertInLinkedList(int value, int location){
         Node node = new Node();
         node.value = value;
@@ -39,6 +41,7 @@ public class SinglyLinkedList {
         }
         size++;
     }
+
     public void traverseLinkedList(){
         if(head == null){
             System.out.println("Linked list doesn't exist...");
