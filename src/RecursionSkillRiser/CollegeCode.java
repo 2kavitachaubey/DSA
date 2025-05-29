@@ -1,4 +1,5 @@
-import java.util.Scanner;
+package RecursionSkillRiser;
+
 public class CollegeCode {
     public static void main(String [] args){
 //        var a = 10; // Implicit type or type Inference- when we know the value
