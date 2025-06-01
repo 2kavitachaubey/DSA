@@ -21,7 +21,7 @@ public class MinMaxArray {
         return newArr;
     }
     public static void main(String[] args) {
-        int [] arr = {2,1,5,1,3,4,8,5};
+        int [] arr = {2,1,5,1,3,4,9,5};
         System.out.println(Arrays.toString(minMax(arr,0)));
     }
 }
