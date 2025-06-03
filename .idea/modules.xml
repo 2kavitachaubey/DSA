@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LearningDSA.iml" filepath="$PROJECT_DIR$/LearningDSA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StringSkillRiser/StringSkillRiser.iml" filepath="$PROJECT_DIR$/StringSkillRiser/StringSkillRiser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/StringSkillRiser/StringSkillRiser.iml" filepath="$PROJECT_DIR$/src/StringSkillRiser/StringSkillRiser.iml" />
     </modules>
   </component>
 </project>
