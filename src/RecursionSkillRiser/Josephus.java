@@ -8,6 +8,6 @@ public class Josephus {
         return (sword(key, n-1) + key) % n;
     }
     public static void main(String[] args) {
-
+        System.out.println(sword(3,5));
     }
 }
