@@ -1,4 +1,4 @@
-package RecursionSR;
+package LogicalSR;
 
 public class Pattern2 {
     public static void empty(int n){

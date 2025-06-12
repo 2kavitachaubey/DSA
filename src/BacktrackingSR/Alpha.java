@@ -1,4 +1,4 @@
-package Backtracking;
+package BacktrackingSR;
 
 public class Alpha {
     public static void forAll(int len, String result){
