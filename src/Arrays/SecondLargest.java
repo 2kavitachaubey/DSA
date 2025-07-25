@@ -3,16 +3,17 @@ package Arrays;
 public class SecondLargest {
     public static void main(String[] args) {
         int []arr = new int[]{1,4,2,5,8};
-        int max = arr[0];
-        for(int i =1; i<arr.length; i++){
-            if(max < arr[i]){
+        int max = Integer.MIN_VALUE;
+        int lessMax = Integer.MIN_VALUE;
+        for(int i = 0; i<arr.length; i++){
+            if (arr[i] > max) {
+                lessMax = max;
                 max = arr[i];
+                System.out.println("this is max: " + max);
             }
-        }
-        int lessMax = 0;
-        for(int i =0; i<arr.length; i++){
-            if(lessMax < arr[i] && arr[i] < max){
+            else if (arr[i] > lessMax && arr[i] != max) {
                 lessMax = arr[i];
+                System.out.println("this is lessmax: "+ lessMax);
             }
         }
         System.out.println(lessMax);
