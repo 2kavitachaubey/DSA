@@ -21,6 +21,6 @@ public class ThirdLargest {
                 min = i;
             }
         }
-        System.out.println(min);
+        System.out.println("Value of third largest:" + min);
     }
 }
