@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class StringAutoWriteHashMap {
     public static void main(String[] args) {
-        String str = "Hello world this is a new world and this is just the beginning of a new world";
+        String str = "Hell world this is a new world and this is just the beginning of a new world";
         str = str.toLowerCase();
 
         String[] strArr = str.split(" ");
