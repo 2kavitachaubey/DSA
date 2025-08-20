@@ -8,8 +8,9 @@ public class FindDifference {
         for(char e : s.toCharArray()){
             r ^= e;
         }
-        for(char e : s.toCharArray()){
+        for(char e : t.toCharArray()){
             r ^= e;
         }
+        System.out.println(r);
     }
 }
