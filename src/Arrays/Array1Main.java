@@ -4,9 +4,9 @@ public class Array1Main {
     public static void main(String[] args) {
         Array1_1Java a2 = new Array1_1Java(5);
         a2.insert(1, 2);
-        a2.insert(0, 4);
+        a2.insert(0, 3);
         a2.insert(2, 7);
-        a2.insert(3, 8);
+        a2.insert(3, 6);
 
         a2.insert(1, 5);
         a2.insert(11, 5);
