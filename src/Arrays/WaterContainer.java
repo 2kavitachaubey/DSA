@@ -6,12 +6,13 @@ public class WaterContainer {
         int low =0;
         int high = water.length-1;
         int area = 0;
-        for(int i=0; i<water.length; i++){
+        while(low<high){
             System.out.println("low: "+ water[low]);
             System.out.println("high: "+ water[high]);
             int value = Integer.min(water[low],water[high]);
-            if(area < value*(water.length-(i+1))){
-                area = value*(water.length-(i+1));
+            int width = high-low;
+            if(area < value*width){
+                area = value*width;
                 System.out.println("this is area : " + area);
             }
             if(water[low] < water[high]){
