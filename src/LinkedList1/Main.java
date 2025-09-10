@@ -14,7 +14,7 @@ public class Main {
 
         sll.traverseSinglyLinkedList();
         sll.searchSinglyLinkedList(6);
-        sll.deletionOfNode(2);
+        sll.deletionOfNode(3);
         sll.traverseSinglyLinkedList();
         sll.deleteEntireList();
         sll.traverseSinglyLinkedList();
