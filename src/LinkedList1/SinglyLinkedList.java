@@ -57,4 +57,63 @@ public class SinglyLinkedList {
         }
         System.out.println("\n");
     }
+
+    public void searchSinglyLinkedList(int element){
+        if(head == null){
+            System.out.println("List is empty.");
+        }
+        Node temp = head;
+        int index = 0;
+        while(index < size){
+            if(temp.value == element){
+                System.out.println("Found the element at index " + index);
+                return;
+            }
+            temp = temp.next;
+            index++;
+        }
+        System.out.println("Element is not in the list.");
+    }
+
+    public void deletionOfNode(int location){
+        if(head == null){
+            System.out.println("The SLL does not exist");
+            return;
+        }else if(location == 0){
+            head = head.next;
+            size--;
+            if(size == 0){
+                tail = null;
+            }
+        }else if(location >= size){
+            Node temp = head;
+            int index = 0;
+            while(index < size-1){
+                temp = temp.next;
+                index++;
+            }
+            if(temp == head){
+                tail = head = null;
+                size--;
+            }else{
+                temp.next = null;
+                tail = temp;
+                size--;
+            }
+        }else{
+            Node temp = head;
+            int index = 0;
+            while(index < location-1){
+                temp = temp.next;
+                index++;
+            }
+            temp.next = temp.next.next;
+            size--;
+        }
+    }
+
+    public void deleteEntireList(){
+        head = tail = null;
+        System.out.println("Deleted Entire List.");
+    }
 }

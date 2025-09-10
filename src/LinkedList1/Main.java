@@ -13,5 +13,10 @@ public class Main {
         System.out.println(sll.tail.value);
 
         sll.traverseSinglyLinkedList();
+        sll.searchSinglyLinkedList(6);
+        sll.deletionOfNode(2);
+        sll.traverseSinglyLinkedList();
+        sll.deleteEntireList();
+        sll.traverseSinglyLinkedList();
     }
 }
