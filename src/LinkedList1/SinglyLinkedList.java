@@ -38,4 +38,23 @@ public class SinglyLinkedList {
         }
         size++;
     }
+
+    public void traverseSinglyLinkedList(){
+        if(head == null){
+            System.out.println("SLL does not exist");
+        }else{
+            int index = 0;
+            Node temp = head;
+            System.out.print("Traversal of Node: ");
+            while(index<size){
+                System.out.print(temp.value);
+                if(index < size -1){
+                    System.out.print(" -> ");
+                }
+                temp = temp.next;
+                index++;
+            }
+        }
+        System.out.println("\n");
+    }
 }

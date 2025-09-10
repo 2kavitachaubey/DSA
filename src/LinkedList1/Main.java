@@ -11,5 +11,7 @@ public class Main {
         System.out.println(sll.head.next.value);
         System.out.println(sll.head.next.next.value);
         System.out.println(sll.tail.value);
+
+        sll.traverseSinglyLinkedList();
     }
 }
