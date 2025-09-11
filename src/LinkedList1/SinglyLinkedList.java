@@ -88,7 +88,7 @@ public class SinglyLinkedList {
         }else if(location >= size){
             Node temp = head;
             int index = 0;
-            while(index < size-1){
+            while(index < size-2){
                 temp = temp.next;
                 index++;
             }
