@@ -6,7 +6,7 @@ public class Main {
         cdl.createCircularDoubly(5);
         System.out.println(cdl.head.value);
         cdl.insertValue(8,0);
-        cdl.insertValue(9,4);
+        cdl.insertValue(3,4);
         cdl.insertValue(7,2);
         cdl.insertValue(2,1);
 
