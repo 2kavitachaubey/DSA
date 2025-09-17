@@ -7,7 +7,7 @@ public class Main {
         System.out.println(cdl.head.value);
         cdl.insertValue(8,0);
         cdl.insertValue(3,4);
-        cdl.insertValue(7,2);
+        cdl.insertValue(8,2);
         cdl.insertValue(2,1);
 
         cdl.traversalList();
