@@ -14,7 +14,7 @@ public class Array2_1Java {
         try {
             if(arr[row][column] == Integer.MIN_VALUE){
                 arr[row][column] = value;
-                System.out.println("The value is successfully inserted.");
+                System.out.println("The value is successfully inserted..");
             }
             else{
                 System.out.println("The index is already occupied.");
